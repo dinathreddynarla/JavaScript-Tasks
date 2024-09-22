@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dinath = document.createElement("h1");
+        dinath.innerText="Narla Dinath Reddy";
+        dinath.style.color="navy";
+        dinath.style.textAlign="center";
+        dinath.style.fontSize="40px";
+        dinath.style.fontWeight="800";
+
+       var obj =document.createElement("h3");
+        obj.innerText="Objective";
+        obj.style.color="green";
+        obj.style.textAlign="left";
+        obj.style.fontSize="32px";
+
+        var para = document.createElement("p");
+        para.innerText="Passionate about specific area of interest, I am seeking an entry-level position that allows me to apply my relevant skills or knowledge to drive innovation and deliver results.";
+        para.style.color="black";
+        para.style.textAlign="left";
+        para.style.fontSize="25px";
+
+        var tech =document.createElement("h3");
+        tech.innerText="Technical-Skills";
+        tech.style.color="red";
+        tech.style.textAlign="left";
+        tech.style.fontSize="32px";
+
+        var ts = document.createElement("ul")
+        ts.style.paddingLeft="100px"
+
+        skill =["HTML","CSS","JavaScript"]
+        
+        for(i=0;i<skill.length;i++){
+            var li = document.createElement("li")
+            li.innerText=skill[i]
+            li.style.color="darkblue"
+            li.style.fontSize="25px"
+            li.style.listStyleType="lower-roman"
+            ts.appendChild(li)
+        }
+        
+        var hobby =document.createElement("h3");
+        hobby.innerText="Hobbies";
+        hobby.style.color="voilet";
+        hobby.style.textAlign="left";
+        hobby.style.fontSize="32px";
+
+        var hob =document.createElement("ul")
+        hob.style.paddingLeft="100px"
+
+        hobbies=["Playing Volleyball","Watching Series","Reading Books"]
+
+       for(i=0;i<hobbies.length;i++){
+            var li = document.createElement("li")
+            li.innerText=hobbies[i]
+            li.style.color="darkgreen"
+            li.style.fontSize="25px"
+            li.style.listStyleType="lower-roman"
+            hob.appendChild(li)
+        }
+        var dec =document.createElement("h3");
+        dec.innerText="Declaration";
+        dec.style.color="orange";
+        dec.style.textAlign="left";
+        dec.style.fontSize="32px";
+
+        var dec2 = document.createElement("p");
+        dec2.innerText="I here by declare all the above given details are True to my Knowledge";
+        dec2.style.color="brown";
+        dec2.style.textAlign="left";
+        dec2.style.fontSize="25px";
+
+        var sign =document.createElement("h2");
+        sign.innerText="Narla Dinath Reddy";
+        sign.style.color="Purple";
+        sign.style.textAlign="left";
+        sign.style.fontSize="32px";
+        sign.style.fontFamily="cursive"
+
+       document.body.appendChild(dinath);
+       document.body.appendChild(obj);
+       document.body.appendChild(para);
+       document.body.appendChild(tech);
+       document.body.appendChild(ts);
+       document.body.appendChild(hobby);
+       document.body.appendChild(hob);
+       document.body.appendChild(dec);
+       document.body.appendChild(dec2);
+       document.body.appendChild(sign)
+       
+    </script>
+</body>
+</html>
